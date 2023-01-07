@@ -1,0 +1,244 @@
+﻿<Window x:Class="WPF_SR15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_SR15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid Background="#FFF7F1E7">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument >
+                <Paragraph>
+                    <Image Source="Data/1.jpg"/>
+                </Paragraph>
+                <Paragraph FontSize="36" TextAlignment="Center">
+                    Сказка о трёх братьях
+
+                </Paragraph>
+
+                <Paragraph>
+                    <Bold>«Сказка о трёх братьях»</Bold>
+                    <Italic>(англ. The Tale of the Three Brothers)</Italic> — одна из сказок, входящих в сборник «Сказки Барда Бидля»
+                    <Italic>(англ. The Tales of Beedle The Bard)</Italic> . Книга для детей, написанная Дж. К. Роулинг. Первое упоминание данных сказок происходит в седьмой книге о Гарри Поттере «Дары Смерти». Согласно сюжету фильма сказки записаны на руническом языке.
+
+                </Paragraph>
+
+                <Paragraph>
+                    <Italic>Содержание</Italic>
+                </Paragraph>
+
+                <Section FontSize="14">
+                    <Table>
+                        <Table.Columns>
+                            <TableColumn Width="0.1*"/>
+                            <TableColumn Width="*"/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        №
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Наименование
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        1
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Дары Смерти
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        2
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Аннотация
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        3
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Текст сказки
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        4
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Появления
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Section>
+
+                <Paragraph>
+                    <Bold>Дары Смерти</Bold>
+                    <Floater Width="250" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/3.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+
+                <Paragraph>
+                    Так называются легендарные артефакты, полученные в сказке о трёх братьях:
+                    <Italic>бузинная палочка, воскрешающий камень и мантия-невидимка.</Italic>
+                    Если кто-либо соберёт их вместе, то станет истинным повелителем смерти. Так же существует знак в виде геометрических условных обозначений всех даров. Вертикальная линия — бузинная палочка и круг — воскрешающий камень заключены в треугольник — мантию-невидимку.
+                </Paragraph>
+
+                <Paragraph>
+                    <Bold>Аннотация</Bold>
+                </Paragraph>
+                <Paragraph>
+                    В «Сказке о трёх братьях» рассказывается о легенде, которая стала частью сюжета последнего романа Джоан Роулинг — «Гарри Поттер и Дары Смерти».
+Однажды три брата отправились путешествовать, но повстречали по дороге реку, возле которой Смерть собирала обычно обильный «урожай». Однако, им удалось переправиться бурные воды, соорудив с помощью волшебных палочек мост. В награду за это братья Певереллы получили от Смерти три дара: старший — непобедимую волшебную палочку, средний — камень, воскрешающий умерших, а младший — плащ-невидимку самой Смерти. Вот только Смерть оказалась коварной, а польза от её подарков — совсем не равноценной…
+                </Paragraph>
+
+                <Paragraph>
+                    <Bold>Текст сказки</Bold>
+                </Paragraph>
+
+                <Section Padding="50 15 50 15" >
+                    <Paragraph>
+                        <Image Source="Data/5.png"/>
+                    </Paragraph>
+                    <Paragraph>
+
+                        «Жили-были трое братьев, и вот однажды отправились они путешествовать. Шли они в сумерках дальней дорогой и пришли к реке. Была она глубокая — вброд не перейти, и такая быстрая, что вплавь не перебраться. Но братья были сведущи в магических искусствах. Взмахнули они волшебными палочками — и вырос над рекою мост. Братья были уже на середине моста, как вдруг смотрят — стоит посреди дороги кто-то, закутанный в плащ.
+И Смерть заговорила с ними. Она очень рассердилась, что три жертвы ускользнули от нее, ведь обычно путники тонули в реке. Но Смерть была хитра. Она притворилась, будто восхищена мастерством братьев, и предложила каждому выбрать себе награду за то, что они ее перехитрили.
+                    </Paragraph>
+                    <Paragraph>
+                        И вот старший брат, человек воинственный, попросил волшебную палочку, самую могущественную на свете, чтобы ее хозяин всегда побеждал в поединке. Такая волшебная палочка достойна человека, победившего саму Смерть! Тогда Смерть отломила ветку с куста бузины, что рос неподалеку, сделала из нее волшебную палочку и дала ее старшему брату.
+                    </Paragraph>
+                    <Paragraph>
+                        Второй брат был гордец. Он захотел еще больше унизить Смерть и потребовал у нее силу вызывать умерших. Смерть подняла камешек, что лежал на берегу, и дала его среднему брату. Этот камень, сказала она, владеет силой возвращать мертвых.
+                    </Paragraph>
+                    <Paragraph>
+                        Спросила смерть младшего брата, что он желает. Младший был самый скромный и самый мудрый из троих и не доверял он Смерти, а потому попросил дать ему такую вещь, чтобы он смог уйти оттуда и Смерть не догнала бы его. Недовольна была Смерть, но ничего не поделаешь — отдала ему свою мантию-невидимку.
+                    </Paragraph>
+                    <Paragraph>
+                        Тогда отступила Смерть и пропустила троих братьев через мост. Пошли они дальше своей дорогой и всё толковали промеж собой об этом приключении да восхищались чудесными вещицами, что подарила Смерть.
+                    </Paragraph>
+                    <Paragraph>
+                        Долго ли, коротко ли, разошлись братья каждый в свою сторону.
+                    </Paragraph>
+                    <Paragraph>
+                        Первый брат странствовал неделю, а может, больше, и пришел в одну далекую деревню.
+                        <Floater Width="250" HorizontalAlignment="Right">
+                            <BlockUIContainer>
+                                <Image Source="Data/4.jpg"/>
+                            </BlockUIContainer>
+                        </Floater>
+                    </Paragraph>
+                    <Paragraph>
+                        Отыскал он там волшебника, с которым был в ссоре. Вышел у них поединок, и, ясное дело, победил старший брат — да и как могло быть иначе, когда у него в руках была бузинная палочка? Противник остался лежать мертвым на земле, а старший брат пошел на постоялый двор и там давай хвастаться, какую чудо-палочку он добыл у самой Смерти, — с нею никто не победит его в бою.
+                    </Paragraph>
+                    <Paragraph>
+                        В ту же ночь один волшебник пробрался к старшему брату, когда тот лежал и храпел, пьяный вдрызг, на своей постели. Вор унес волшебную палочку, а заодно перерезал старшему брату горло.
+                    </Paragraph>
+                    <Paragraph>
+                        Так Смерть забрала первого брата.
+                    </Paragraph>
+                    <Paragraph>
+                        Тем временем средний брат вернулся к себе домой, а жил он один-одинёшенек. Взял он камень, что мог вызывать мертвых, и три раза повернул в руке. Что за чудо — стоит перед ним девушка, на которой он мечтал жениться, да только умерла она ранней смертью.
+                    </Paragraph>
+                    <Paragraph>
+                        Но была она печальна и холодна, словно какая-то занавесь отделяла её от среднего брата. Хоть она и вернулась в подлунный мир, не было ей здесь места, и горько страдала она. В конце концов средний брат сошёл с ума от безнадежной тоски и убил себя, чтобы только быть вместе с любимой.
+                    </Paragraph>
+                    <Paragraph>
+                        Так Смерть забрала и второго брата.
+                    </Paragraph>
+                    <Paragraph>
+                        Третьего же брата искала Смерть много лет, да так и не нашла. А когда младший брат состарился, то сам снял мантию-невидимку и отдал её своему сыну. Встретил он Смерть как давнего друга и своей охотой с нею пошел, и как равные ушли они из этого мира.»
+                    </Paragraph>
+                    <Paragraph>
+                        <Image Source="Data/6.png"/>
+                    </Paragraph>
+                </Section>
+
+                <Paragraph>
+                    <Bold>Появления</Bold>
+                </Paragraph>
+                <List MarkerStyle="Circle">
+                    <ListItem>
+                        <Paragraph>
+                            Гарри Поттер и Дары Смерти (Первое появление)
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Гарри Поттер и Дары Смерти: Часть 1
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Гарри Поттер и Дары Смерти: Часть I (игра)
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Сказки барда Бидля (реальная книга)
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            LEGO Гарри Поттер: годы 5-7
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <Paragraph>
+                    <Hyperlink NavigateUri="https://harrypotter.fandom.com/ru/wiki/%D0%A1%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0_%D0%BE_%D1%82%D1%80%D1%91%D1%85_%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D1%8F%D1%85" >Материал взят из источника</Hyperlink>
+                </Paragraph>
+                <BlockUIContainer>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Content ="Оценить" Grid.Column="0"/>
+                        <Button Content ="Поделиться" Grid.Column="1"/>
+                    </Grid>
+                </BlockUIContainer>
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
